@@ -32,7 +32,7 @@ class FlashDriver extends MDriver
 	var sound:Sound;
 	var channel:SoundChannel;
 	
-	public function new(params:Hash<Dynamic>)
+	public function new(params:Map<String, Dynamic>)
 	{
 		name = "FlashDriver for hxMikMod (c) jouko@iki.fi";
 		version = "1.0";
