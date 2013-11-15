@@ -480,7 +480,7 @@ class MDriver
 		md_driver.Reset();
 	}
 
-	public static function _mm_init(params:Hash<Dynamic>):Bool
+	public static function _mm_init(params:Map<String, Dynamic>):Bool
 	{
 		var t:Int;
 		

@@ -26,17 +26,11 @@ import flash.events.EventDispatcher;
 import flash.utils.Timer;
 import flash.events.TimerEvent;
 
-class TrackerEventDispatcher extends EventDispatcher
-{
+class TrackerEventDispatcher {
 	
-	private static var d:TrackerEventDispatcher = new TrackerEventDispatcher();
+	private static var d:EventDispatcher = new EventDispatcher();
 	private inline static var MIN_EVENT_DELAY:Int = 50;
 	private static var latency:Float = 0.0;
-	
-	public function new()
-	{
-		super();
-	}
 
 	public static function setLatency(lat:Float)
 	{

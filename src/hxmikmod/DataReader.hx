@@ -166,7 +166,7 @@ class DataReader
 		return data.readByte();
 	}
 
-	public function _mm_read_UBYTES(len:UInt):Array<Int>
+	public function _mm_read_UBYTES(len:Int):Array<Int>
 	{
 		var ret = new Array<Int>();
 		if (data.bytesAvailable < len) return null;
@@ -178,7 +178,7 @@ class DataReader
 		return ret;
 	}
 
-	public function _mm_read_ByteArray(len:UInt):ByteArray
+	public function _mm_read_ByteArray(len:Int):ByteArray
 	{
 		var ret=new ByteArray();
 		data.readBytes(ret, 0, len);
@@ -238,9 +238,9 @@ class DataReader
 				data.position = offset;
 			case SEEK_CUR:
 				data.position += offset;
-			default:
+			/*default:
 				trace("Seek: bad whence=" + whence);
-				return false;
+				return false;*/
 		}
 		
 		return true;

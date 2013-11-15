@@ -42,9 +42,9 @@ import haxe.PosInfos;
 
 class Profiler
 {
-	static var entertime:Hash<Int> = new Hash();
-	static var totaltime:Hash<Int> = new Hash();
-	static var called:Hash<Int> = new Hash();
+	static var entertime:Map<String, Int> = new Map();
+	static var totaltime:Map<String, Int> = new Map();
+	static var called:Map<String, Int> = new Map();
 	static var profiling_started = 0;
 
 	inline static var UNPROFILED = "(unprofiled time) ";
@@ -52,9 +52,9 @@ class Profiler
 
 	public static function reset()
 	{
-		totaltime = new Hash();
-		entertime = new Hash();
-		called = new Hash();
+		totaltime = new Map();
+		entertime = new Map();
+		called = new Map();
 		profiling_started = Lib.getTimer();
 	}
 

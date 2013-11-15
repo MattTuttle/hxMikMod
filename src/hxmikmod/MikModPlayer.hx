@@ -40,7 +40,7 @@ class MikModPlayer
 		_playing = false;
 	}
 
-	private function start(mod:Module)
+	public function start(mod:Module)
 	{
 		var t:Int;
 		if (mod==null) return;
@@ -60,8 +60,8 @@ class MikModPlayer
 		_playing = true;
 	}
 	
-	public var isPlaying(getPlaying, null):Bool;
-	private function getPlaying():Bool
+	public var isPlaying(get, null):Bool;
+	private function get_isPlaying():Bool
 	{
 		return _playing;
 	}
