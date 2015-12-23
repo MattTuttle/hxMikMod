@@ -45,7 +45,7 @@ and others.
 Information about the original MikMod is available at
 http://mikmod.raphnet.net/
 
-This haXe port was written by Jouko Pynnönen (jouko@iki.fi)
+This Haxe port was written by Jouko Pynnönen (jouko@iki.fi)
 
 
 
@@ -79,7 +79,7 @@ for debugging.
 Notes on porting
 ================
 
-Firstly, I'm new with haXe and Flash so there is probably a lot of room
+Firstly, I'm new with Haxe and Flash so there is probably a lot of room
 for improvement in this project. Any contributions such as bug reports and
 fixes, functionality patches, additional module format support, etc.
 are appreciated.
@@ -109,7 +109,7 @@ You will receive events about the loading process to an event handler:
 
 
 The file Types.hx contains typedefs of the numeric types used in original
-libmikmod. Currently they all translate into the haXe Int type.
+libmikmod. Currently they all translate into the Haxe Int type.
 
 There are a few functions that haven't been implemented yet (they're in the source
 as stubs with a trace() call). However all playback functionality of the currently
